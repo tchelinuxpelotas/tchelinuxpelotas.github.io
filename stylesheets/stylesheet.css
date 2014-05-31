@@ -53,7 +53,7 @@ body {
   color:#373737;
   background: #212121;
   font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  font-family: 'Bitter', 'Helvetica', Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -273,10 +273,10 @@ Full-Width Styles
   display: block;
   position: absolute;
   top:0;
-  right: 10px;
-  z-index: 10;
-  padding: 10px 50px 10px 10px;
+  right: 1% !important;
+  z-index: 100;
   color: #fff;
+  padding: 10px 50px 10px 10px;
   background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
   font-weight: 700;
   box-shadow: 0 0 10px rgba(0,0,0,.5);
@@ -294,23 +294,26 @@ Full-Width Styles
 }
 
 #header_wrap .inner {
-  padding: 50px 10px 30px 10px;
+  padding:10px 30px 10px;
 }
 
 #project_title {
   margin: 0;
+  padding:0;
   color: #fff;
-  font-size: 42px;
+  font-size: 30px;
   font-weight: 700;
+  margin-bottom:-10px;
   text-shadow: #111 0px 0px 10px;
 }
 
 #project_tagline {
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
   background: none;
   text-shadow: #111 0px 0px 10px;
+  margin-bottom:-30px;
 }
 
 #downloads {
@@ -366,8 +369,29 @@ Full-Width Styles
   background: #212121;
 }
 
+#tchelinux_pin{
+	background-color:white;
+	height:105px;
+	width:65px;
+	text-align:center;
+	position:absolute;
+	top:0;
+	left:1%;
+	z-index:200;
+	box-shadow:0px 0px 10px black;
+	font-weight: 300;
+	color:#222222;
+	-webkit-font-smoothing: antialiased;
+	font-size:11px;
+	font-weight:bold;
+}
 
+#tchelinux_pin > img{
+	background-color:white;
+	  box-shadow: none;
+	margin-bottom:-2px;
 
+}
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
@@ -419,5 +443,4 @@ Small Device Styles
     max-width: 480px;
     font-size: 11px;
   }
-
 }
