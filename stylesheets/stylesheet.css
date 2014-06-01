@@ -294,14 +294,14 @@ Full-Width Styles
 }
 
 #header_wrap .inner {
-  padding:10px 30px 10px;
+	text-align:center;
 }
 
 #project_title {
   margin: 0;
   padding:0;
   color: #fff;
-  font-size: 30px;
+  font-size: 33px;
   font-weight: 700;
   margin-bottom:-10px;
   text-shadow: #111 0px 0px 10px;
@@ -370,6 +370,7 @@ Full-Width Styles
 }
 
 #tchelinux_pin{
+	float:right;
 	background-color:white;
 	height:105px;
 	width:65px;
