@@ -407,11 +407,17 @@ Full-Width Styles
 .main_menu{
 	width:100%;
 	height:40px;
-	background:-moz-linear-gradient(center top , rgba(77, 76, 76, 1), #212121) repeat scroll 0% 0% transparent;
-	text-align:center;
+	background: #444444; /* Old browsers */
+	background: -moz-linear-gradient(top, #444444 2%, #212121 50%, #212121 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#444444), color-stop(50%,#212121), color-stop(100%,#212121)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #444444 2%,#212121 50%,#212121 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #444444 2%,#212121 50%,#212121 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #444444 2%,#212121 50%,#212121 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #444444 2%,#212121 50%,#212121 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#212121',GradientType=0 ); /* IE6-9 */	text-align:center;
 	font-size:15px;
 	color:white;
-	padding-top:12px;
+	padding-top:14px;
 	font-weight:normal;
 	text-shadow: 1px 1px black;
 }
